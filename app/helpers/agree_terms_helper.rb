@@ -1,0 +1,2 @@
+module AgreeTermsHelper
+end

@@ -1,0 +1,12 @@
+<h1>TENNIS HOMEPAGE</h1>
+
+<%= link_to 'overview', '/home/overview' %>
+
+<% if user_signed_in? %>
+  <%= link_to 'マイページ', mypage_path %>
+
+<%else%>
+
+  <%= link_to '新規登録', '/users/sign_up' %>
+  <%= link_to "ログイン", new_user_session_path %>
+<%end%>
